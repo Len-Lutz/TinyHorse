@@ -1,2 +1,2 @@
-TTS Group Project
-Create copies of pagea from TinyHorse.com website
+TTS Group Project - 
+Create copies of pages from TinyHorse.com website
