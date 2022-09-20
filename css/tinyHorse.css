@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    /* font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    background-image: url("./images/tiny-horse-marketing-strategies.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center; */
+}
+
+nav.bg-primary {
+    background: transparent !important;
+    transition: 2S00ms ease;
+}
+
+nav.bg-primary.scrolled {
+    background: black !important;
+}
+
+ nav {
+    max-height: 90px;
+    padding: 0;
+    font-size: small;
+    vertical-align: middle;
+}
+
+p {
+    line-height: 2;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    width: 100%;
+    font-size: 25px;
+    line-height: 2;
+    margin-bottom: 1em;
+}
+
+h6 {
+    font-family: sans-serif !important;
+    font-size: 14px;
+    min-width: 200px;
+    padding-right: 30px;
+}
+
+.card-body {
+    min-width: 200px;
+}
+
+.pageHeader {
+    font-size: 32px;
+    margin-top: 1em;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    margin: 0;
+    padding: 40px;
+}
+
+.fullwidth {
+    width: 100% !important;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,1);
+    border-color: rgba(255,255,255,.1);
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid red;
+}
+
+a.nav-link.active {
+    border-bottom: 3px solid red !important;
+}
+
+li.nav-item {
+    margin: 2px 5px;
+}
+
+div.dropdown-menu {
+    border-top-color: red;
+    color: white;
+    background-color: black;
+    max-height: 80px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    font-family: 'Cardo';
+    max-width: 100%;
+}
+
+.dropdown-item {
+    color: white;
+    background-color: black;
+    max-height: 80px;
+}
+
+a.dropdown-item:hover {
+    color: white;
+    background-color: #1C80C6;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    color: white;
+    background-color: black;
+}
+
+.dmSerif {
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
+    line-height: 1.7;
+    letter-spacing: 2px;
+}
+
+.caslonSerif {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.breakImage{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.sec1 {
+    margin-top: 50px;
+}
+
+.col-md-3 {
+    min-width: 200px;
+}
+
+.col-sm-3 {
+    min-width: 200px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-sm-4 {
+    min-width: 200px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card {
+    min-width: 200px;
+}
