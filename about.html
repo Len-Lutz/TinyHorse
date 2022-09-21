@@ -19,13 +19,11 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <link rel="stylesheet" type="text/css" href="./css/tinyHorse.css">
+    <link rel="stylesheet" type="text/css" href="./css/tinyHorseLen.css">
+    <link rel="stylesheet" type="text/css" href="./css/tinyHorseLenNav.css">
 </head>
 
-<body
-    style="background-image: url(./images/tiny-horse-marketing-strategies.jpg); background-repeat: no-repeat; background-size: 100%; max-width: 100%; height: auto;">
-    <!-- <body> -->
-    <!-- <body class="backPic"> -->
+<body style="background-image: url(./images/tiny-horse-marketing-strategies.jpg); background-repeat: no-repeat; background-size: 100%; max-width: 100%; height: auto;">
 
     <header>
         <!-- navbar -->
@@ -116,9 +114,9 @@
                 </h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="biographies">
             <div class="col-sm-3">
-                <div class="card">
+                <div class="card animate__animated animate__fadeInBottomLeft">
                     <img src="./images/tiny-horse-owen-300x300.jpg" class="card-img-top" alt="Owen Leimbach"
                         style="max-width: 300px; min-width: 200px">
                     <div class="card-body">
@@ -149,7 +147,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card">
+                <div class="card animate__animated animate__fadeInBottomLeft">
                     <img src="./images/iny-horse-jon-300x300.jpg" class="card-img-top" alt="Jon Reynaga"
                         style="max-width: 300px; min-width: 200px">
                     <div class="card-body">
@@ -178,7 +176,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card">
+                <div class="card animate__animated animate__fadeInBottomLeft">
                     <img src="./images/tiny-horse-kyle-300x300b-300x300.jpg" class="card-img-top" alt="Kyle Young"
                         style="max-width: 300px; min-width: 200px">
                     <div class="card-body">
@@ -209,7 +207,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card">
+                <div class="card animate__animated animate__fadeInBottomLeft">
                     <img src="./images/tiny-horse-mel-300x300.jpg" class="card-img-top" alt="Melanie Johnson"
                         style="max-width: 300px; min-width: 200px">
                     <div class="card-body">
@@ -250,9 +248,9 @@
                 </h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="genManagers">
             <div class="col-sm-4">
-                <div class="card">
+                <div class="card animate__animated animate__fadeInBottomLeft">
                     <img src="./images/tiny-horse-larry-300x300.jpg" class="card-img-top" alt="Larry Hubatka"
                         style="max-width: 300px; min-width: 200px">
                     <div class="card-body">
@@ -281,7 +279,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="card">
+                <div class="card animate__animated animate__fadeInBottomLeft">
                     <img src="./images/tiny-horse-jill-300x300.jpg" class="card-img-top" alt="Jill Johnson"
                         style="max-width: 300px; min-width: 200px">
                     <div class="card-body">
@@ -312,7 +310,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="card">
+                <div class="card animate__animated animate__fadeInBottomLeft">
                     <img src="./images/tiny-horse-Ben-Simon-300x300.jpg" class="card-img-top" alt="Ben Simon"
                         style="max-width: 300px; min-width: 200px">
                     <div class="card-body">
@@ -376,14 +374,33 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
         </script>
-    <script>
+
+    <script>  // toggles Navbar background between transparent and black
         $(window).scroll(function () {
             $('nav').toggleClass('scrolled', window.scrollY > 130);
         });
     </script>
+
+    <!-- Work in progress - trying to refresh page when biographies come into view -->
+    <!-- <script type="text/javascript">
+        let firstTime = true;
+        var observer = new IntersectionObserver(function (entries) {
+            if (entries[0]['isIntersecting'] === true) {
+                if (entries[0]['intersectionRatio'] > 0.3) {
+                    if (firstTime === true) {
+                        firstTime = false;
+                        window.location.reload();
+                    }
+                }
+            }
+        }, { threshold: [0, 0.5, 1] });
+
+        observer.observe(document.querySelector("#biographies"));
+    </script> -->
 
 </body>
 
