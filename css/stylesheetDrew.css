@@ -1,0 +1,466 @@
+body {
+    background-repeat: no-repeat; 
+    background-image: url(https://tinyhorse.com/wp-content/uploads/2019/04/Tiny-Horse-Marketing-Agency-Contact.jpg);
+    background-attachment: scroll; 
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 50%;
+}
+
+.navbar {
+    background: #111111;
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-family: 'comfortaa', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #f4f4f4;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.nav-link { /* Need to add to other code */
+    margin-right: 1em !important;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+    font-size: 1.1em;
+}
+
+.navbar .navbar-nav .nav-link:hover { /*Not on Tiny Horse website*/
+    color: white;
+}
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: darkorange;
+    width: 0%;
+    content: "";
+    height: 2px;
+    transition: all 0.2s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: lightgray;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    background: #fff !important;
+}
+
+.bg-dark {
+    background-color: #262989 !important
+}
+
+.fixed-top {
+    position: fixed;
+}
+
+h1 {
+    display: flex;
+    justify-content: left;
+    font-family: 'Cardo';
+    font-size: 60px;
+    margin-bottom: 400px;
+    color: white;
+}
+
+.description {
+    margin-top: 150px;
+}
+
+.bg-primary {
+    line-height: 100px;
+    margin-bottom: 50px;
+}
+
+.accent {
+    display:block;
+    position: relative;
+}
+
+.container-fluid {
+    background-color: #f4eae9;
+    background: #f4eae9;
+    height: 5cm;
+    position: absolute;
+}
+
+h6 {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: 'comfortaa', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    font-family: 'Cardo';
+    max-width: 100%;
+}
+
+.form-row {
+    margin-left: 30px;
+    margin-left: 30px;
+}
+
+.form {
+    margin-top: 185px;
+    background-color: white;
+}
+
+.contact {
+    text-align: left;
+    margin-left: 35px;
+    font-family: 'Cardo';
+}
+
+p {
+    text-transform: uppercase;
+}
+
+.form-control {
+    background-color: #F3F3F3;
+}
+
+.bg-primary {
+    margin-top: 50px;
+    background-color: black;
+}
+
+.button {
+    height: 60px;
+    width: 300px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.footer {
+    background: black;
+}
+
+.list-unstyled {
+    text-transform: uppercase;
+    font-size: medium;
+    font-family: sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline;
+}
+
+.text-left {
+    font-size: x-small;
+    color: teal;
+}
+
+.footer-con {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form {
+    background-color: white;
+    position: relative;
+}
+
+
+
+
+/*header style
+.header {
+    background-image: url('../images/headerback.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: #fff;
+}
+
+.description {
+    position: absolute;
+    top: 10%;
+    margin: auto;
+    padding: 2em;
+}
+
+.description h1 {
+    color: #262989;
+}
+
+.description p {
+    color: #666;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.description button {
+    border: 1px solid #262989;
+    background: #262989;
+    color: #fff;
+}
+
+/*.btn btn-outline-secondary {
+
+}
+
+.about {
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+    margin-top: 10px;
+}
+
+.about h1 {
+    color: #262989;
+    margin: 2em;
+}
+
+.about img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%
+}
+
+.about span {
+    display: block;
+    color: #888;
+    position: absolute;
+    left: 115px;
+}
+
+.about .desc {
+    padding: 2em;
+    border-left: 4px solid #262989;
+}
+
+.about .desc h3 {
+    color: #262989;
+}
+
+.about .desc p {
+    line-height: 2;
+    color: #888;
+}
+
+/*Portfolio
+.portfolio {
+    margin: 4em 0;
+    position: relative;
+}
+
+.portfolio h1 {
+    color: #262989;
+    margin: 2em;
+}
+
+.portfolio img {
+    height: 15rem;
+    width: 100%;
+    margin: 1em;
+
+}
+
+.about-me {
+    color: #262989;
+}
+
+.blog {
+    margin: 4em 0;
+    position: relative;
+}
+
+.blog h1 {
+    color: #262989;
+    margin: 2em;
+}
+
+.blog .card {
+    box-shadow: 0 0 20px #ccc;
+}
+
+.blog .card img {
+    width: 100%;
+    height: 12em;
+}
+
+.blog .card-title {
+    color: #262989;
+
+}
+
+.blog .card-body {
+    padding: 1em;
+}
+
+.team {
+    margin: 4em 0;
+    position: relative;
+}
+
+.team h1 {
+    color: #262989;
+    margin: 2em;
+}
+
+.team .item {
+    position: relative;
+}
+
+.team .des {
+    background: #262989;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 93%;
+    transition: .3s ease-in-out;
+
+}
+
+.team .item:hover .des {
+    height: 100%;
+    background: rgba(2, 186, 255, 0.8);
+    position: absolute;
+    width: 89%;
+    padding: 5em;
+    top: 0;
+    border-bottom-left-radius: 0;
+}
+
+.contact-form {
+    margin: 6em 0;
+    position: relative;
+}
+
+.contact-form h1 {
+    padding: 2em 1px;
+    color: #262989;
+}
+
+.contact-form .right {
+    max-width: 600px;
+}
+
+.contact-form .right .btn-secondary {
+    background: #262989;
+    color: #fff;
+    border: 0;
+}
+
+.contact-form .right .form-control::placeholder {
+    color: #888;
+    font-size: 16px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: "Raleway";
+}
+
+.input-group {
+    width: 15cm;
+    display: flex;
+}
+
+.btn-outline-primary {
+    color: #f4f4f4;
+}
+
+.img-fluid {
+    margin: auto;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 120px;
+}
+
+.service-head {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 125px;
+}
+
+.anchor {
+    display: inline;
+    text-align: center;
+    border: 1px solid #262989;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    margin-left: 85px;
+    background-color: #262989;
+    color: white;
+}
+
+.but-small {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #262989;
+    padding: 10px 10px 10px 10px;
+    margin-left: 130px;
+    background-color: #262989;
+    color: white;
+}
+
+body {
+    margin-bottom: 150px;
+}
+
+header {
+    margin-bottom: 600px;
+}
+*/
